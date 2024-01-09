@@ -1,14 +1,17 @@
 
 import './App.css';
-import Search from './Search';
+//import WithoutCallback from './WithoutCallback';
+import WithCallback from './WithCallback';
+//import Search from './Search';
 
 function App() {
  
-
+  const propValue = "Hello, prop value!";
   return (
     <>
-
-      <Search />
+      <WithCallback propValue={propValue} />
+      {/* <WithoutCallback /> */}
+      {/* <Search /> */}
     </>
   )
 }
